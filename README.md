@@ -1,73 +1,119 @@
-# Welcome to your Lovable project
+# Opensquad
 
-## Project info
+Crie squads de agentes de IA que trabalham juntos — direto do seu IDE.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Como Usar
 
-## How can I edit this code?
+Abra esta pasta no seu IDE e digite:
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+/opensquad
 ```
 
-**Edit a file directly in GitHub**
+Isso abre o menu principal. De lá você pode criar squads, executá-los e mais.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Você também pode ser direto — descreva o que quer em linguagem natural:
 
-**Use GitHub Codespaces**
+```
+/opensquad crie um squad para escrever posts no LinkedIn sobre IA
+/opensquad execute o squad meu-squad
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Criar um Squad
 
-## What technologies are used for this project?
+Digite `/opensquad` e escolha "Criar squad" no menu, ou seja direto:
 
-This project is built with:
+```
+/opensquad crie um squad para [o que você precisa]
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+O Arquiteto fará algumas perguntas, projetará o squad e configurará tudo automaticamente.
 
-## How can I deploy this project?
+## Executar um Squad
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Digite `/opensquad` e escolha "Executar squad" no menu, ou seja direto:
 
-## Can I connect a custom domain to my Lovable project?
+```
+/opensquad execute o squad <nome-do-squad>
+```
 
-Yes, you can!
+O squad executa automaticamente, pausando apenas nos checkpoints de decisão.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Escritório Virtual
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+O Escritório Virtual é uma interface visual 2D que mostra seus agentes trabalhando em tempo real.
+
+**Passo 1 — Gere o dashboard** (no seu IDE):
+
+```
+/opensquad dashboard
+```
+
+**Passo 2 — Sirva localmente** (no terminal):
+
+```bash
+npx serve squads/<nome-do-squad>/dashboard
+```
+
+**Passo 3 —** Abra `http://localhost:3000` no seu navegador.
+
+---
+
+# Opensquad (English)
+
+Create AI squads that work together — right from your IDE.
+
+## How to Use
+
+Open this folder in your IDE and type:
+
+```
+/opensquad
+```
+
+This opens the main menu. From there you can create squads, run them, and more.
+
+You can also be direct — describe what you want in plain language:
+
+```
+/opensquad create a squad for writing LinkedIn posts about AI
+/opensquad run my-squad
+```
+
+## Create a Squad
+
+Type `/opensquad` and choose "Create squad" from the menu, or be direct:
+
+```
+/opensquad create a squad for [what you need]
+```
+
+The Architect will ask a few questions, design the squad, and set everything up automatically.
+
+## Run a Squad
+
+Type `/opensquad` and choose "Run squad" from the menu, or be direct:
+
+```
+/opensquad run the <squad-name> squad
+```
+
+The squad runs automatically, pausing only at decision checkpoints.
+
+## Virtual Office
+
+The Virtual Office is a 2D visual interface that shows your agents working in real time.
+
+**Step 1 — Generate the dashboard** (in your IDE):
+
+```
+/opensquad dashboard
+```
+
+**Step 2 — Serve it locally** (in terminal):
+
+```bash
+npx serve squads/<squad-name>/dashboard
+```
+
+**Step 3 —** Open `http://localhost:3000` in your browser.
